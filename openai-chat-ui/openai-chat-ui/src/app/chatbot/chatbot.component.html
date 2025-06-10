@@ -1,0 +1,19 @@
+<div class="chat-wrapper">
+  <div class="chat-box">
+    <div *ngFor="let msg of messages" class="message" [ngClass]="msg.sender">
+      <span class="bubble">
+        <strong>{{ msg.sender === 'user' ? 'You' : 'Bot' }}:</strong> {{ msg.text }}
+      </span>
+    </div>
+  </div>
+
+  <div class="chat-input">
+    <input
+      type="text"
+      [(ngModel)]="userInput"
+      (keyup.enter)="sendMessage()"
+      placeholder="Type a message..."
+    />
+    <button (click)="sendMessage()">Send</button>
+  </div>
+</div>
