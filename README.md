@@ -1,5 +1,3 @@
-# 🤖 AI-Powered Chatbot using Spring AI & OpenAI
-
 A smart conversational chatbot that uses OpenAI's API to respond intelligently to user queries. Built with a Spring Boot backend and an Angular frontend, this project showcases real-time communication with powerful AI using a clean, responsive UI.
 
 ---
